@@ -1,0 +1,25 @@
+{
+    "header":{
+        "registro":"Registrar",
+        "Iniciar-Sesión":"Iniciar Sesión",
+        "embarcación":"Inscribe tu embarcación",
+        "hello":"Hola"
+    },
+
+    "logins":{
+        "registro":"Registro",
+        "Nombre":"Nombre",
+        "Apellidos":"Apellidos",
+        "Correo":"Correo ",
+        "Telefono":"Telefono",
+        "Contraseña":"Contraseña",
+        "sesion":"Inicia Sesión",
+        "politica":"Aceptar GCU y la Política de Privacidad",
+        "registrarse":"REGISTRARSE",
+        "Recordar":"Recordar Contraseña",
+        "rememberCon":"¿Has olvidado tu correo electrónico?",
+        "rememberCo":"¿Has olvidado tu contraseña?",
+        "verificado":"El registro se ha completado correctamente"
+        
+    }
+}

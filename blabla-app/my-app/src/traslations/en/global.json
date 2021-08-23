@@ -1,0 +1,23 @@
+{
+    "header":{
+        "registro":"Registration",
+        "Iniciar-Sesión":"Log in",
+        "embarcación":"Register your boat",
+        "hello":"Hello"
+    },
+    "logins":{
+        "registro":"Registration",
+        "Nombre":"Name",
+        "Apellidos":"Surname",
+        "Correo":"Email",
+        "Telefono":"phone",
+        "Contraseña":"Password",
+        "sesion":"Login",
+        "politica":"Accept GCU and the Privacy Policy",
+        "registrarse":"REGISTER",
+        "Recordar":"Remember Password",
+        "rememberCon":"Have you forgotten your email?",
+        "rememberCo": "Have you forgotten your password?",
+        "verificado":"Registration has been completed successfully"
+    }
+}
