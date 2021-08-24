@@ -4,16 +4,7 @@ import nodemailer from 'nodemailer'
 
 const app = express()
 const port = 3000
-// app.use(cookieParser())
 
-// // app.get('/greet/:name', (req, res) => {
-    
-// //   res.send( {"data": `Hello ${req.params.name}`})
-// // })
-
-// // app.listen(port, () => {
-// //   console.log(`Example app listening at http://localhost:${port}`)
-// // })
 
 app.use(express.json()) // for parsing application/json
 
@@ -30,7 +21,7 @@ app.post('/send-email', async (req, res) => {
       secure: true, // true for 465, false for other ports
       auth: {
         user: 'jose.tovarcabrera@gmail.com', // generated ethereal user
-        pass: 'skrlqlnamsgmnupx', // generated ethereal password
+        pass: , // generated ethereal password
       },
       tls:{
         rejectUnauthorized:false
@@ -51,11 +42,3 @@ app.post('/send-email', async (req, res) => {
     console.log(`Example app listening at http://localhost:${port}`)
   })
 
-// app.get('/greet-cookie', (req, res) => {
-    
-//   res.send( {"data": `Hello ${req.cookies.name}`})
-// })
-
-// app.listen(port, () => {
-//   console.log(`Example app listening at http://localhost:${port}`)
-// })
