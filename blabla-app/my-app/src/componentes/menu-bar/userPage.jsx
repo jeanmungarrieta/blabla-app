@@ -52,11 +52,12 @@ import MenuIcon from '@material-ui/icons/Menu';
       
       <header className="bar-menu">
       <Link to="/"><img className="logo" src={imagen} alt=""></img></Link>
-      <p className="hello-title">{t("header.hello")}, Fernando</p>
+      <p className="hello-title hello-titlerespon">{t("header.hello")}, Fernando</p>
 
       
-      <div className="div-responsive">
-      <p className="hello-title">{t("header.hello")}, Fernando</p>
+     
+      <div className="div-responsiveUser">
+      
          <Toolbar>
               <IconButton onClick={handleClick4}
               className="btn-nav-responsive"
@@ -66,6 +67,7 @@ import MenuIcon from '@material-ui/icons/Menu';
                <MenuIcon />
             </IconButton>
             </Toolbar>
+            
            </div>
 
            <Popover id={id4}
@@ -77,12 +79,14 @@ anchorPosition={{ top: 122,left:1000 }}
 anchorOrigin={{
 vertical: 'bottom',
 horizontal: 'center'}}>
+
          <div className=" btn-container-responsive">
     
     <button onClick={handleClick2} className="btn-responsive">{t("header.registro")}</button>
     <button className="btn-responsive">{t("header.embarcación")}</button>
     </div>
     </Popover>
+
 
     <div className="btn-container">
     <button onClick={handleClick2} className="btn-sesion">{t("header.registro")}</button>

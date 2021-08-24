@@ -181,6 +181,10 @@
   }
 /* responsive */
 @media (max-width:800px) {
+
+  .headerResponsive-container{
+    display: flex;
+  }
   .btn-container{
     display:none;
   }
@@ -189,10 +193,19 @@
     justify-content: center;
     background-color: #252E41;
   }
+  .div-responsiveUser{
+    display: flex;
+    justify-content: center;
+    background-color: #252E41;
+    margin-right: 1rem;
+  }
+  .hello-titlerespon{
+    margin-right: 0.4rem;
+  }
   
   .btn-nav-responsive.btn-nav-responsive{
     color: #FFFFFF;
-    margin-right: 0.4rem;
+    margin-right: o.4rem;
   }
 
   .btn-responsive{
