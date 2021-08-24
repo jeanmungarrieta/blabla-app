@@ -12,7 +12,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import MenuBarResponsive from './componentes/menu-bar/menu-responsive'
+
 
 i18next.init({
   interpolation:{escapeValue:false},
@@ -41,9 +41,7 @@ function App() {
           <Route exact path="/">
       <Menubar></Menubar>
       </Route>
-      <Route exact path="/res">
-      <MenuBarResponsive></MenuBarResponsive>
-      </Route>
+      
 
       <Route exact path="/registrado">
       <HomeRe></HomeRe>

@@ -12,6 +12,9 @@ import TextField from '@material-ui/core/TextField';
 import Popover from '@material-ui/core/Popover';
 import{useTranslation} from 'react-i18next';
 import { useHistory } from 'react-router';
+import Toolbar from '@material-ui/core/Toolbar';
+import IconButton from '@material-ui/core/IconButton';
+import MenuIcon from '@material-ui/icons/Menu';
 
 
 
@@ -21,6 +24,7 @@ import { useHistory } from 'react-router';
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [anchorEl2, setAnchorEl2] = React.useState(null);
   const [anchorEl3, setAnchorEl3] = React.useState(null);
+  const [anchorEl4, setAnchorEl4] = React.useState(null);
   const [t, i18n] = useTranslation("global");
   const open = Boolean(anchorEl);
   const id = open ? 'simple-popover' : undefined;
@@ -28,6 +32,8 @@ import { useHistory } from 'react-router';
   const id2 = open ? 'simple-popover' : undefined;
   const open3 = Boolean(anchorEl3);
   const id3 = open ? 'simple-popover' : undefined;
+  const open4 = Boolean(anchorEl4);
+  const id4 = open ? 'simple-popover' : undefined;
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
@@ -38,11 +44,15 @@ import { useHistory } from 'react-router';
   const handleClick3 = (event) => {
     setAnchorEl3(event.currentTarget);
   };
+  const handleClick4 = (event) => {
+    setAnchorEl4(event.currentTarget);
+  };
 
   const handleClose = () => {
     setAnchorEl(null);
     setAnchorEl2(null);
     setAnchorEl3(null);
+    setAnchorEl4(null);
   };
   
 
@@ -53,7 +63,36 @@ import { useHistory } from 'react-router';
       
       <header className="bar-menu">
       <img className="logo" src={imagen} alt=""></img>
-         <div className="btn-container">
+         
+      <div className="div-responsive">
+         <Toolbar>
+              <IconButton onClick={handleClick4}
+              className="btn-nav-responsive"
+               color="inherit"
+            aria-label="open drawer"
+            edge="end">
+               <MenuIcon />
+            </IconButton>
+            </Toolbar>
+           </div>
+
+           <Popover id={id4}
+open={open4}
+anchorEl={anchorEl4}
+onClose={handleClose}
+anchorReference="anchorPosition"
+anchorPosition={{ top: 122,left:1000 }}
+anchorOrigin={{
+vertical: 'bottom',
+horizontal: 'center'}}>
+         <div className=" btn-container-responsive">
+    <button onClick={handleClick} className="btn-responsive">{t("header.Iniciar-Sesión")}</button>
+    <button onClick={handleClick2} className="btn-responsive">{t("header.registro")}</button>
+    <button className="btn-responsive">{t("header.embarcación")}</button>
+    </div>
+    </Popover>
+
+    <div className="btn-container">
     <button onClick={handleClick} className="btn-sesion">{t("header.Iniciar-Sesión")}</button>
     <button onClick={handleClick2} className="btn-sesion">{t("header.registro")}</button>
     <button className="btn-ins">{t("header.embarcación")}</button>
