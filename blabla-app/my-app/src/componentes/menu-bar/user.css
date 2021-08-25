@@ -1,0 +1,226 @@
+.bar-menu{
+    display: flex;
+  
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  fill: solid #252E41;
+  width: auto;
+  height: 92px;
+  left: 0px;
+  top: 0px;
+  background: #FFFFFF;
+  }
+  
+  .div-responsiveUser{
+      display: none;
+  }
+  .logo{
+    width: 10rem;
+  }
+  
+  .btn-container{
+    display: flex;
+    justify-content: right;
+  }
+  .btn-container-responsive{
+    display: none;
+    }
+  
+  .btn-sesion.btn-sesion{
+    
+  align-items: center;
+  padding: 8px 22px;
+  border-style: none;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+  position: static;
+  
+  top: 0%;
+  bottom: 0%;
+  
+  /* Primario/fondo oceanico */
+  
+  background: #252E41;
+  border-radius: 4px;
+  
+  /* Inside Auto Layout */
+  
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 10px 10px;
+  
+  
+  Font-style: Medium;
+  Font-size: 15px;
+  Line-height: 26px;
+  Line-height: 148%;
+  color: white;
+  
+  }
+  
+  .btn-sesion:hover{
+  cursor: pointer;
+  
+  }
+  
+  .btn-ins{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px 22px;
+  border-style: none;
+  position: static;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+  
+  /* Primario / espuma de mar */
+  
+  background: #ACCCD8;
+  border-radius: 4px;
+  
+  /* Inside Auto Layout */
+  
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 10px 0px;
+  
+  Font-style: Medium;
+  Font-size: 15px;
+  Line-height: 26px;
+  Line-height: 148%;
+  color: white;
+  }
+  .logs{
+    display: flex;
+    justify-content: space-around;
+    background-image: url("../../assets/image-3.png");
+    height: 100vh;
+  }
+  
+  .log{
+    background-color: white;
+    box-shadow: 0px 2px 2px black;
+    
+    
+  }
+  
+  .logTitle-Container{
+    display: flex;
+    justify-content: space-between;
+  }
+  .log-title{
+  
+  Font-style: Regular;
+  Font-size: 34px;
+  Line-height: 42px;
+  Line-height: 124%;
+  fill:  #252E41;
+  color:#252E41;
+  
+  }
+  
+  
+  .btnLog-container{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .p-sigin{
+    color: #252E41;
+  }
+  
+  .check-image{
+    width: 4rem;
+    
+  }
+  
+  .p-check{
+    text-align: center;
+    Font-style: Bold;
+  Font-size: 21px;
+  fill:solid black;
+  }
+  .check-card{
+    Width:378px;
+  Height:553px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 2px 2px black;
+  
+  }
+
+  .btn-language{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hello-title{
+    Font-style: Bold;
+    margin-right: 2rem;
+    Font-size: 19px;
+    Line-height: 22px;
+    Line-height: 100%;
+    fill:  #252E41;
+    color:#252E41;
+  }
+
+  .div-responsive{
+    display: none;
+  }
+/* responsive */
+@media (max-width:800px) {
+
+  .headerResponsive-container{
+    display: flex;
+  }
+  .btn-container{
+    display:none;
+  }
+  .div-responsive{
+    display: flex;
+    justify-content: center;
+    background-color: #252E41;
+  }
+  .div-responsiveUser{
+    display: flex;
+    justify-content: center;
+    background-color: #252E41;
+    margin-right: 1rem;
+  }
+  .hello-titlerespon{
+    margin-right: 0.4rem;
+  }
+  
+  .btn-nav-responsive.btn-nav-responsive{
+    color: #FFFFFF;
+    margin-right: o.4rem;
+  }
+
+  .btn-responsive{
+    Font-style: Medium;
+    border-style: none;
+  Font-size: 14px;
+  width: 7.5rem;
+  height: 5rem;
+  box-shadow: 0px 2px 2px black;
+    color: #ACCCD8;
+   
+  }
+  .btn-container-responsive{
+    background-color: #FFFFFF;
+     display: flex;
+     flex-direction: column;
+    }
+}
+
+
+

@@ -15,6 +15,7 @@ import { useHistory } from 'react-router';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
+import Footer from './footer';
 
 
 
@@ -271,7 +272,7 @@ horizontal: 'left',
 
 
     </div>
-    <div ClassName="footer-container">
+    {/* <div ClassName="footer-container">
             <img ClassName="pricipal-logo"src= "img/img-logo.png" alt=""></img>
             <ul>
                 <li>Sobre nosotros</li>
@@ -309,11 +310,13 @@ transformOrigin={{
         ingles
       </Button>
       </div>
-      </Popover>
+      </Popover> */}
 
+        <Footer></Footer>
+        
     
       
-        </div>
+        
     </div>
     );
 }

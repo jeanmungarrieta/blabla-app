@@ -2,7 +2,7 @@
 import imagen from '../../assets/image.png'
 import React from 'react'
 import check from '../../assets/check.png'
-import '../menu-bar/style.css';
+import '../menu-bar/user.css';
 import Button from '@material-ui/core/Button';
 import Popover from '@material-ui/core/Popover';
 import{useTranslation} from 'react-i18next';
