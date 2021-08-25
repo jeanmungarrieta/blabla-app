@@ -15,14 +15,13 @@ import Footer from './footer';
     function UserPage(){
   
   const [anchorEl2, setAnchorEl2] = React.useState(null);
-  const [anchorEl3, setAnchorEl3] = React.useState(null);
+ 
   const [anchorEl4, setAnchorEl4] = React.useState(null);
   const [t, i18n] = useTranslation("global");
   
   const open2 = Boolean(anchorEl2);
   const id2 = open2 ? 'simple-popover' : undefined;
-  const open3 = Boolean(anchorEl3);
-  const id3 = open3 ? 'simple-popover' : undefined;
+  
   const open4 = Boolean(anchorEl4);
   const id4 = open4 ? 'simple-popover' : undefined;
 
@@ -30,9 +29,7 @@ import Footer from './footer';
   const handleClick2 = (event) => {
     setAnchorEl2(event.currentTarget);
   };
-  const handleClick3 = (event) => {
-    setAnchorEl3(event.currentTarget);
-  };
+
 
   const handleClick4 = (event) => {
     setAnchorEl4(event.currentTarget);
@@ -41,7 +38,7 @@ import Footer from './footer';
   const handleClose = () => {
    
     setAnchorEl2(null);
-    setAnchorEl3(null);
+    
     setAnchorEl4(null);
   };
   

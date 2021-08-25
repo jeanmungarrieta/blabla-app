@@ -23,15 +23,14 @@ import Footer from './footer';
       let history = useHistory();
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [anchorEl2, setAnchorEl2] = React.useState(null);
-  const [anchorEl3, setAnchorEl3] = React.useState(null);
+ 
   const [anchorEl4, setAnchorEl4] = React.useState(null);
   const [t, i18n] = useTranslation("global");
   const open = Boolean(anchorEl);
   const id = open ? 'simple-popover' : undefined;
   const open2 = Boolean(anchorEl2);
   const id2 = open ? 'simple-popover' : undefined;
-  const open3 = Boolean(anchorEl3);
-  const id3 = open ? 'simple-popover' : undefined;
+
   const open4 = Boolean(anchorEl4);
   const id4 = open ? 'simple-popover' : undefined;
 
@@ -41,9 +40,7 @@ import Footer from './footer';
   const handleClick2 = (event) => {
     setAnchorEl2(event.currentTarget);
   };
-  const handleClick3 = (event) => {
-    setAnchorEl3(event.currentTarget);
-  };
+ 
   const handleClick4 = (event) => {
     setAnchorEl4(event.currentTarget);
   };
@@ -51,7 +48,7 @@ import Footer from './footer';
   const handleClose = () => {
     setAnchorEl(null);
     setAnchorEl2(null);
-    setAnchorEl3(null);
+   
     setAnchorEl4(null);
   };
   
