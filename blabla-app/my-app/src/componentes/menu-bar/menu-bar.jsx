@@ -272,50 +272,8 @@ horizontal: 'left',
 
 
     </div>
-    {/* <div ClassName="footer-container">
-            <img ClassName="pricipal-logo"src= "img/img-logo.png" alt=""></img>
-            <ul>
-                <li>Sobre nosotros</li>
-                <li>Contacto</li>
-                <li>Ayuda</li>
-                <li>Seguro</li>
-            </ul>
-            <img  ClassName="facebook-logo"src="img/Vector(fb).png" alt=""></img>
-            <img ClassName="instagram-logo"src="Vector (inst).png" alt=""></img>
-            <img ClassName="twitter-logo"src= "Vector (tw).png" alt=""></img>
-            
-                <Button aria-describedby={id} variant="contained"  onClick={handleClick3}>
-        Idioma
-      </Button>
-
-      <Popover
-id={id3}
-open={open3}
-anchorEl={anchorEl3}
-onClose={handleClose}
-anchorOrigin={{
-  vertical: 'top',
-  horizontal: 'center',
-}}
-transformOrigin={{
-  vertical: 'bottom',
-  horizontal: 'center',
-}}
->
-  <div className="btn-language">
-      <Button onClick={()=> i18n.changeLanguage("es")} aria-describedby={id} variant="contained" >
-        Español
-      </Button>
-      <Button onClick={()=> i18n.changeLanguage("en")} aria-describedby={id} variant="contained"  >
-        ingles
-      </Button>
-      </div>
-      </Popover> */}
-
-        <Footer></Footer>
-        
     
-      
+        <Footer></Footer>
         
     </div>
     );

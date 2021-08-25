@@ -1,20 +1,10 @@
 
-import imagen from '../../assets/image.png'
 import React from 'react'
-import x from '../../assets/x.png'
-import '../menu-bar/style.css';
+import '../menu-bar/footer.css';
 import Button from '@material-ui/core/Button';
-import Container from '@material-ui/core/Container';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import Checkbox from '@material-ui/core/Checkbox';
-import Grid from '@material-ui/core/Grid';
-import TextField from '@material-ui/core/TextField';
 import Popover from '@material-ui/core/Popover';
 import{useTranslation} from 'react-i18next';
-import { useHistory } from 'react-router';
-import Toolbar from '@material-ui/core/Toolbar';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
+
 
 
 function Footer(){

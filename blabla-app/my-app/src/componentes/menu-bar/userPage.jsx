@@ -10,6 +10,7 @@ import { Link } from 'react-router-dom';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
+import Footer from './footer';
 
     function UserPage(){
   
@@ -114,46 +115,7 @@ horizontal: 'center'}}>
 
 
     </div>
-    <div ClassName="footer-container">
-            <img ClassName="pricipal-logo"src= "img/img-logo.png" alt=""></img>
-            <ul>
-                <li>Sobre nosotros</li>
-                <li>Contacto</li>
-                <li>Ayuda</li>
-                <li>Seguro</li>
-            </ul>
-            <img  ClassName="facebook-logo"src="img/Vector(fb).png" alt=""></img>
-            <img ClassName="instagram-logo"src="Vector (inst).png" alt=""></img>
-            <img ClassName="twitter-logo"src= "Vector (tw).png" alt=""></img>
-            
-                <Button  variant="contained"  onClick={handleClick3}>
-        Idioma
-      </Button>
-
-      <Popover
-id={id3}
-open={open3}
-anchorEl={anchorEl3}
-onClose={handleClose}
-anchorOrigin={{
-  vertical: 'top',
-  horizontal: 'center',
-}}
-transformOrigin={{
-  vertical: 'bottom',
-  horizontal: 'center',
-}}
->
-  <div className="btn-language">
-      <Button onClick={()=> i18n.changeLanguage("es")}  variant="contained" >
-        Español
-      </Button>
-      <Button onClick={()=> i18n.changeLanguage("en")}  variant="contained"  >
-        ingles
-      </Button>
-      </div>
-      </Popover>
-        </div>
+    <Footer></Footer>
     </div>
     );
 }
