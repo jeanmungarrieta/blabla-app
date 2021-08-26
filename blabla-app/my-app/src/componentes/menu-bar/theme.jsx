@@ -9,11 +9,14 @@
     footBar: {
         backgroundColor:'#252E41',
         display:'flex',
-        
         justifyContent:'space-between',
-    borderstyle: 'solid',
-    borderWidth:'0.3rem',
-    borderColor: 'white',
+    
+    borderTop:'0.2px solid white',
+    borderRight:'0.5px solid white',
+    borderLeft:'0.5px solid white',
+    borderBottom:'0.5px solid white',
+    
+    // borderColor: 'white',
     width:'12rem',
     height:'3rem',
     color:'white',

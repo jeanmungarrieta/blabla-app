@@ -116,7 +116,7 @@ horizontal: 'center',
         <p className="log-title">{t("logins.registro")}</p>
         <button onClose={handleClose} className="btn-x"> <img src={x} alt=""></img></button>
         </div>
-      <form action="http://localhost:3000/send-email" method="POST">
+      <form action="http://localhost:3001/send-email" method="POST">
         <Grid container spacing={3}>
           <Grid item xs={12}>
             <Grid container spacing={2}>
