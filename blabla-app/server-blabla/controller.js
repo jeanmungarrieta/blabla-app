@@ -16,7 +16,7 @@ export const getMail  = async (req, res) => {
       secure: true, // true for 465, false for other ports
       auth: {
         user: 'jose.tovarcabrera@gmail.com', // generated ethereal user
-        pass: 'skrlqlnamsgmnupx', // generated ethereal password
+        pass:, // generated ethereal password
       },
       tls:{
         rejectUnauthorized:false
