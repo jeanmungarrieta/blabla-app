@@ -1,5 +1,5 @@
 import express from 'express';
-import { getMail,getUsercreate } from '../controller.js';
+import { getMail } from '../controller.js';
 
 
 const router = express.Router();
@@ -9,7 +9,6 @@ router
   
   router
   .route('/send-email')
-  .post(getUsercreate)
   .post(getMail)
   
   

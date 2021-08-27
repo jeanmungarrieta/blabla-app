@@ -13,7 +13,6 @@
   }
   
   
-  
   .logo{
     width: 10rem;
   }
@@ -137,30 +136,6 @@
     color: #252E41;
   }
   
-  .check-image{
-    width: 4rem;
-    
-  }
-  
-  .p-check{
-    text-align: center;
-    Font-style: Bold;
-  Font-size: 21px;
-  fill:solid black;
-  }
-  .check-card{
-    Width:378px;
-  Height:553px;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  box-shadow: 0px 2px 2px black;
-  
-  }
-
   .btn-language{
     display: flex;
     flex-direction: column;

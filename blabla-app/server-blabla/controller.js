@@ -4,15 +4,9 @@ import {createUser} from './src/model.js'
 
 
 
-export const getUsercreate=(req,res,next)=>{
-  createUser(req.body)
-  next()
-  
-}
-
 export const getMail  = async (req, res) => {
     
-  
+  createUser(req.body)
   
   const {Nombre,apellidos,telefono, Correo, Contraseña}= req.body
 
@@ -22,7 +16,7 @@ export const getMail  = async (req, res) => {
       secure: true, // true for 465, false for other ports
       auth: {
         user: 'jose.tovarcabrera@gmail.com', // generated ethereal user
-        pass: , // generated ethereal password
+        pass: 'skrlqlnamsgmnupx', // generated ethereal password
       },
       tls:{
         rejectUnauthorized:false
