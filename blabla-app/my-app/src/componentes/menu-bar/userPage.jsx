@@ -11,6 +11,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import Footer from './footer';
+import Secondheader from './secondHeader';
 
     function UserPage(){
   
@@ -52,8 +53,6 @@ import Footer from './footer';
       <Link to="/"><img className="logo" src={imagen} alt=""></img></Link>
       <p className="hello-title hello-titlerespon">{t("header.hello")}, Fernando</p>
 
-      
-     
       <div className="div-responsiveUser">
       
          <Toolbar>
@@ -91,8 +90,6 @@ horizontal: 'center'}}>
     <button className="btn-ins">{t("header.embarcación")}</button>
     </div>
       </header>
-      
-    <div className="logs">
 
     <Popover id={id2}
 open={open2}
@@ -110,8 +107,8 @@ horizontal: 'center'}}>
       </div>
       </Popover>
 
-
-    </div>
+<Secondheader></Secondheader>
+    
     <Footer></Footer>
     </div>
     );

@@ -8,6 +8,10 @@
 
     "logins":{
         "registro":"Registro",
+        "destino":"Destino",
+        "fecha":"Fecha",
+        "buscar":"Búscar",
+        "numero":"numero",
         "Nombre":"Nombre",
         "Apellidos":"Apellidos",
         "Correo":"Correo ",
@@ -19,7 +23,10 @@
         "Recordar":"Recordar Contraseña",
         "rememberCon":"¿Has olvidado tu correo electrónico?",
         "rememberCo":"¿Has olvidado tu contraseña?",
-        "verificado":"El registro se ha completado correctamente"
+        "verificado":"El registro se ha completado correctamente",
+        "encabezado1":"Te ofrecemos la ventana al" ,
+        "encabezado2": "viaje de tus sueños",
+        "encabezado3":"Busca tu próximo destino"
         
     }
 }

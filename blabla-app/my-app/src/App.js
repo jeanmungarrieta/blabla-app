@@ -1,4 +1,4 @@
-import Menubar from "./componentes/menu-bar/menu-bar";
+import Home from "./componentes/menu-bar/home";
 import UserPage from "./componentes/menu-bar/userPage";
 import HomeRe from "./componentes/menu-bar/homeRe";
 import PrivateRoute from "./componentes/menu-bar/PrivateRoute";
@@ -39,7 +39,7 @@ function App() {
         <Switch>
 
           <Route exact path="/">
-      <Menubar></Menubar>
+      <Home></Home>
       </Route>
       
 

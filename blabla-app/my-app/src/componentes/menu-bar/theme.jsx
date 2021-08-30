@@ -3,7 +3,15 @@
  
  export const useStyles = makeStyles((theme) => ({
     root: {
-      display: 'flex',
+  backgroundColor: '#6A8F93',
+  height: '22rem',
+  width: 'auto',
+  padding: '2rem',
+  marginLeft:'2rem',
+  marginRight:'2rem',
+  marginBottom:'4rem',
+  borderRadius: '4px',
+  boxShadow:' 0px 2px 2px rgba(0, 0, 0, 0.5)',
       
     },
     footBar: {

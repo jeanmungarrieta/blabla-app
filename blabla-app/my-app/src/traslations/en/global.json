@@ -7,6 +7,10 @@
     },
     "logins":{
         "registro":"Registration",
+        "destino":"Destiny",
+        "fecha":"Date",
+        "buscar":"Search",
+        "numero":"numbers",
         "Nombre":"Name",
         "Apellidos":"Surname",
         "Correo":"Email",
@@ -18,6 +22,9 @@
         "Recordar":"Remember Password",
         "rememberCon":"Have you forgotten your email?",
         "rememberCo": "Have you forgotten your password?",
-        "verificado":"Registration has been completed successfully"
+        "verificado":"Registration has been completed successfully",
+        "encabezado1":" We offer you the window to",
+        "encabezado2":"the trip of your dreams",
+        "encabezado3":"Find your next destination"
     }
 }
