@@ -51,9 +51,6 @@ export const createUser = async (req,res) => {
           })
           
       }
-  
-
-  
 
 //----------------------model login
 export const validateUser = async (user) => {

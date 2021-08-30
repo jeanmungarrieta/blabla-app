@@ -6,7 +6,10 @@ import {secret} from '../data/secrets.js';
 export const getRegister=(req,res)=>{
         console.log(req.body)
         createUser(req.body)
-        res.status(200).redirect('http://localhost:3000/registrado')     
+        res.status(200)     
+}
+export const showRegister=(req,res)=>{
+    send(true)     
 }
 
 ///--------controllerlogin-----------------

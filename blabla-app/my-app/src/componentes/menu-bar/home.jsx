@@ -1,5 +1,5 @@
 
-import imagen from '../../assets/image.png'
+import imagen from '../../assets/Logo.png'
 import React, { useEffect } from 'react'
 import x from '../../assets/x.png'
 import '../menu-bar/style.css';
@@ -17,12 +17,14 @@ import MenuIcon from '@material-ui/icons/Menu';
 import Footer from './footer';
 import Secondheader from './secondHeader';
 import UserPage from './userPage';
+import Sectioncards from './section';
 
 
     function Home(){
       const [name, setname] = React.useState(""); 
       const [btn, setbtn] = React.useState(true);  
       const [islog, setlog] = React.useState(''); 
+      const [isreg, setreg] = React.useState(false); 
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [anchorEl2, setAnchorEl2] = React.useState(null);
   const [anchorEl4, setAnchorEl4] = React.useState(null);
@@ -126,15 +128,14 @@ horizontal: 'center',
       <form onSubmit={(e) => {
         setbtn(true)
         e.preventDefault()
+        if( e.target[8].value===e.target[10].value){
         const USER = {
           nombre: e.target[0].value,
           apellido: e.target[2].value,
           telefono: e.target[6].value,
           email: e.target[4].value,
           password: e.target[8].value,
-          rememberPassword:e.target[10].value
-        }
-        
+        } 
         console.log(USER)
       
         fetch('http://localhost:3001/log', {
@@ -142,12 +143,11 @@ horizontal: 'center',
           body:JSON.stringify(USER),
           headers: {
             'Content-Type': 'application/json',
-           
           },
         })
         .then(res => res.json())
         .then(json => console.log(json));
-      }}>
+      }}}>
 
         <Grid container spacing={3}>
           <Grid item xs={12}>
@@ -214,7 +214,7 @@ horizontal: 'center',
                   label={t("logins.Recordar")}
                   name="remember"
                   size="small"
-                  type="text"
+                  type="password"
                   variant="outlined"
                 />
               </Grid>
@@ -318,10 +318,8 @@ horizontal: 'left',
     </Container>
     </Popover>
 <Secondheader></Secondheader>
-    
-    <section className="section-cards">
-      <p>hola</p>
-    </section>
+   
+     <Sectioncards></Sectioncards>
     
         <Footer></Footer>
         

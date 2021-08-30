@@ -1,6 +1,6 @@
 import express from 'express';
 import {isValidateReg,validateJWTAuth} from './middleware.js'
-import { getRegister,loginController,retrieveUserInfoCtrl } from './controller.js';
+import { getRegister,loginController,retrieveUserInfoCtrl,showRegister} from './controller.js';
 
 
 const router = express.Router();
@@ -12,6 +12,7 @@ router
   router
   .route('/log')
   .post(isValidateReg, getRegister)
+  .get(showRegister)
  
   
   router

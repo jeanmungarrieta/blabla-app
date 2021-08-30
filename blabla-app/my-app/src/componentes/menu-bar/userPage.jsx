@@ -3,15 +3,13 @@ import imagen from '../../assets/image.png'
 import React from 'react'
 import check from '../../assets/check.png'
 import '../menu-bar/user.css';
-import Button from '@material-ui/core/Button';
 import Popover from '@material-ui/core/Popover';
 import{useTranslation} from 'react-i18next';
 import { Link } from 'react-router-dom';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
-import Footer from './footer';
-import Secondheader from './secondHeader';
+
 
     function UserPage(props){
   
@@ -43,7 +41,6 @@ import Secondheader from './secondHeader';
     setAnchorEl4(null);
   };
   
-
 
   return (
       
