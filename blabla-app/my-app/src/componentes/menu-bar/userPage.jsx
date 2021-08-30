@@ -13,7 +13,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import Footer from './footer';
 import Secondheader from './secondHeader';
 
-    function UserPage(){
+    function UserPage(props){
   
   const [anchorEl2, setAnchorEl2] = React.useState(null);
  
@@ -51,7 +51,7 @@ import Secondheader from './secondHeader';
       
       <header className="bar-menu">
       <Link to="/"><img className="logo" src={imagen} alt=""></img></Link>
-      <p className="hello-title hello-titlerespon">{t("header.hello")}, Fernando</p>
+      <p className="hello-title hello-titlerespon">{t("header.hello")}, {props.nombre}</p>
 
       <div className="div-responsiveUser">
       
@@ -106,10 +106,6 @@ horizontal: 'center'}}>
         <p className="p-check">{t("logins.verificado")}</p>
       </div>
       </Popover>
-
-<Secondheader></Secondheader>
-    
-    <Footer></Footer>
     </div>
     );
 }

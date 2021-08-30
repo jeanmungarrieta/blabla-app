@@ -1,16 +1,13 @@
 import nodemailer from 'nodemailer'
-import {
-  MongoClient
-} from 'mongodb';
+import { MongoClient} from 'mongodb';
 
 const URL = 'mongodb+srv://bootcamp_user:bootcamp_user@cluster0.be4cd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
 //--------------modelReg---------------------------------
 
 export const validateReg = async (user) => {
   const loginValue = {
-    Correo: user,
+    email: user,
   };
-
   const client = await MongoClient.connect(URL);
   const data = await client
     .db("blabla-app")
@@ -30,7 +27,6 @@ export const createUser = async (req,res) => {
       const user = req
   const client = await MongoClient.connect(URL);
   const data = await client
-      
         .db('blabla-app')
           .collection('users')
           .insertOne(user) 
@@ -40,7 +36,7 @@ export const createUser = async (req,res) => {
             secure: true, // true for 465, false for other ports
             auth: {
               user: 'jose.tovarcabrera@gmail.com', // generated ethereal user
-              pass: 'skrlqlnamsgmnupx', // generated ethereal password
+              pass:  // generated ethereal password
             },
             tls: {
               rejectUnauthorized: false
@@ -48,34 +44,32 @@ export const createUser = async (req,res) => {
           });
           await transporter.sendMail({
             from: 'jose.tovarcabrera@gmail.com',
-            to: req.Correo,
+            to: req.email,
             subject: 'Message',
             html: '<p><b>Hola</p>' +
               '<p> Gracias por registrarte, ya puedes seguir navegando en http://localhost:3000/registrado </p>',
           })
-          return data.length > 0;
+          
       }
   
 
   
 
 //----------------------model login
-export const validateUser = async (user, password) => {
+export const validateUser = async (user) => {
+  
   const loginValue = {
-    Correo: user,
-    password: password,
+    email: user,
   };
 
   const client = await MongoClient.connect(URL);
-
   const data = await client
     .db("blabla-app")
     .collection("users")
-    .find(loginValue)
-    .toArray();
-
+    .findOne(loginValue)
+    
   client.close();
-  return data.length > 0;
+  return data;
 };
 
 

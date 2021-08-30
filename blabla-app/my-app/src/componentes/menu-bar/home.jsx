@@ -1,6 +1,6 @@
 
 import imagen from '../../assets/image.png'
-import React from 'react'
+import React, { useEffect } from 'react'
 import x from '../../assets/x.png'
 import '../menu-bar/style.css';
 import Button from '@material-ui/core/Button';
@@ -11,30 +11,26 @@ import Grid from '@material-ui/core/Grid';
 import TextField from '@material-ui/core/TextField';
 import Popover from '@material-ui/core/Popover';
 import{useTranslation} from 'react-i18next';
-import { useHistory } from 'react-router';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import Footer from './footer';
 import Secondheader from './secondHeader';
-import { useStyles } from './theme';
-
+import UserPage from './userPage';
 
 
     function Home(){
-      const classes = useStyles();
-      let history = useHistory();
+      const [name, setname] = React.useState(""); 
       const [btn, setbtn] = React.useState(true);  
+      const [islog, setlog] = React.useState(''); 
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [anchorEl2, setAnchorEl2] = React.useState(null);
- 
   const [anchorEl4, setAnchorEl4] = React.useState(null);
   const [t, i18n] = useTranslation("global");
   const open = Boolean(anchorEl);
   const id = open ? 'simple-popover' : undefined;
   const open2 = Boolean(anchorEl2);
   const id2 = open ? 'simple-popover' : undefined;
-
   const open4 = Boolean(anchorEl4);
   const id4 = open ? 'simple-popover' : undefined;
 
@@ -56,14 +52,24 @@ import { useStyles } from './theme';
     setAnchorEl4(null);
   };
   
+
+  useEffect(() => {
+    if(islog !== undefined){
+   fetch('http://localhost:3001/showInfo',{
+    method: 'GET',
+    headers: {
+      "Authorization": `Bearer ${islog.access_token}`, 
+    }})
+   .then(res => res.json())
+   .then(data => setname(data.nombre))
+  }
+  });
+
   return (
       
     <div>
-      
-      <header className="bar-menu">
-      <img className="logo" src={imagen} alt=""></img>
-         
-      <div className="div-responsive">
+      {islog === ''?   <header className="bar-menu">
+      <img className="logo" src={imagen} alt=""></img>  <div className="div-responsive">
          <Toolbar>
               <IconButton onClick={handleClick4}
               className="btn-nav-responsive"
@@ -95,8 +101,8 @@ horizontal: 'center'}}>
     <button onClick={handleClick} className="btn-sesion">{t("header.Iniciar-Sesión")}</button>
     <button onClick={handleClick2} className="btn-sesion">{t("header.registro")}</button>
     <button className="btn-ins">{t("header.embarcación")}</button>
-    </div>
-      </header>
+    </div> </header> : <UserPage nombre={name}></UserPage> }
+      
 
     
 <Popover id={id2}
@@ -135,7 +141,7 @@ horizontal: 'center',
           body:JSON.stringify(USER),
           headers: {
             'Content-Type': 'application/json',
-            //  'Content-Type': 'application/x-www-form-urlencoded',
+           
           },
         })
         .then(res => res.json())
@@ -249,8 +255,24 @@ horizontal: 'left',
         <p className="log-title">{t("logins.sesion")}</p>
         <button className="btn-x"> <img src={x} alt=""></img></button>
         </div>
-      <form   action="http://localhost:3001/login"
-      method="POST"> 
+      <form onSubmit={(e) => {
+        e.preventDefault()
+        const USER = {
+          email: e.target[0].value,
+          password: e.target[2].value,
+        }
+        console.log(USER)
+        fetch('http://localhost:3001/login', {
+          method: 'POST',
+          body:JSON.stringify(USER),
+          headers: {
+            'Content-Type': 'application/json', 
+          },
+        })
+        .then(res => res.json())
+        .then(data =>{ setlog(data)
+        console.log(islog)}  );
+      }}> 
 
         <Grid container spacing={3}>
           <Grid item xs={12}>
