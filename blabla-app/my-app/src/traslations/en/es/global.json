@@ -28,5 +28,12 @@
         "encabezado2": "viaje de tus sueños",
         "encabezado3":"Busca tu próximo destino"
         
+    },
+
+    "footer":{
+        "sobrenosotros": "Sobre nosotros",
+        "contacto": "Contacto",
+        "ayuda": "Ayuda",
+        "seguro": "Seguro"
     }
 }

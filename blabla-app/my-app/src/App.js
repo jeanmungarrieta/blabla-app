@@ -6,6 +6,7 @@ import {I18nextProvider} from 'react-i18next';
 import i18next from 'i18next';
 import globalEs from './traslations/en/es/global.json';
 import globalEn from './traslations/en/global.json'
+import globalRu from './traslations/en/ru/global.json';
 import {
   BrowserRouter as Router,
   Switch,
@@ -23,6 +24,9 @@ i18next.init({
     },
     en:{
       global:globalEn
+    },
+    ru:{
+      global:globalRu
     }
   }
 })

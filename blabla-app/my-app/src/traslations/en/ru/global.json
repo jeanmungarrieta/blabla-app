@@ -1,0 +1,38 @@
+{
+    "header":{
+        "registro":"Регистрация",
+        "Iniciar-Sesión":"Войти",
+        "embarcación":"Зарегистрируйте свою яхту",
+        "hello":"Здравствуйте"
+    },
+
+    "logins":{
+        "registro":"Регистрация",
+        "destino":"Направление",
+        "fecha":"Дата",
+        "buscar":"Поиск",
+        "numero":"номера",
+        "Nombre":"Имя",
+        "Apellidos":"Фамилия",
+        "Correo":"Email",
+        "Telefono":"телефон",
+        "Contraseña":"Пароль",
+        "sesion":"Вход",
+        "politica":"Принять GCU и Политику конфиденциальности",
+        "registrarse":"РЕГИСТРАЦИЯ",
+        "Recordar":"Запомнить пароль",
+        "rememberCon":"Вы забыли свою электронную почту?",
+        "rememberCo": "Вы забыли свой пароль?",
+        "verificado":"Регистрация успешно завершена",
+        "encabezado1":" Мы предлагаем вам окно в",
+        "encabezado2":"путешествие вашей мечты",
+        "encabezado3":"Найдите свое следующее направление"
+    },
+
+    "footer":{
+        "sobrenosotros": "О нас",
+        "contacto": "Контакт",
+        "ayuda": "Помощь",
+        "seguro": "Страховка"
+    }
+}
