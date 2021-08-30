@@ -5,6 +5,7 @@
         "embarcación":"Register your boat",
         "hello":"Hello"
     },
+
     "logins":{
         "registro":"Registration",
         "destino":"Destiny",
@@ -26,5 +27,12 @@
         "encabezado1":" We offer you the window to",
         "encabezado2":"the trip of your dreams",
         "encabezado3":"Find your next destination"
+    },
+
+    "footer":{
+        "sobrenosotros": "About Us",
+        "contacto": "Contact",
+        "ayuda": "Help",
+        "seguro": "Insurance"
     }
 }

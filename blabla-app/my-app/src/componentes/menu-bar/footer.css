@@ -1,85 +1,98 @@
-
- .footer-container{
-  background-color: #252E41;
+.footer-container {
+  background-color: #252e41;
   display: flex;
   justify-content: space-between;
   height: 4rem;
-  Padding:3rem
+  padding: 3rem;
+  align-items: center;
 }
 
-.nav-footer{
+.nav-footer {
   display: flex;
   justify-content: space-between;
   list-style: none;
   color: white;
+  align-items: center;
 }
 
-.li-footer{
+.li-footer {
   margin-right: 2rem;
+  cursor: pointer
 }
 
-.barra-footer{
+.barra-footer {
   width: 1px;
   height: 2rem;
   background-color: white;
   margin-right: 2rem;
 }
 
-.footer-logo{
-  width: 1.5rem;
-  height: 1.5rem;
-  margin-top: 1.5rem;
-  margin-right: 2rem;
+.socialIcon {
+  display: flex;
+  /* margin-right: 1rem; */
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 10vw;
+  margin-left: -2vw;
 }
 
-.btn-language{
+.footer-logo {
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer
+}
+
+.btn-language {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  width: 5rem;
+}
+
+.language-btn.language-btn {
+  background-color: #252e41;
+  border-style: solid;
+  border-color: white;
+}
+.icon-footer {
+  color: white;
+}
+
+@media (max-width: 800px) {
+  .socialIcon {
+    display: flex;
+    /* margin-right: 1rem; */
+    margin-bottom: 3rem;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 36vw;
+  }
+
+  .li-footer {
+    margin-bottom: 1rem;
+    margin-right: 0;
+  }
+
+  .nav-footer {
     display: flex;
     flex-direction: column;
+    padding: 0;
+    margin-bottom: 0.5rem;
   }
- 
-  .logo{
-    width: 5rem;
+  .barra-footer {
+    display: none;
   }
-
-  .language-btn.language-btn{
-    background-color: #252E41;
-    border-style: solid;
-    border-color: white;
+  .footer-container-res {
+    background-color: #252e41;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    padding: auto;
+    align-items: center;
+    text-align: center;
   }
-  .icon-footer{
-    color: white;
-  }
-
-  @media (max-width:800px){
-
-    .socialIcon{
-      display: flex;
-      margin-right: 1rem;
-      margin-bottom: 1.5rem;
-      
-    }
-
-    .li-footer{
-      margin-bottom: 1rem;
-    }
-    .nav-footer{
-      display: flex;
-      flex-direction: column;
-      
-      
-    }
-    .barra-footer{
-      display: none;
-    }
-    .footer-container-res{
-     background-color: #252E41;
-     display: flex;
-     flex-wrap: wrap;
-      flex-direction: column;
-     justify-content: center;
-     height: auto;
-     Padding:auto;
-   }
-   
-  
-  }
+}

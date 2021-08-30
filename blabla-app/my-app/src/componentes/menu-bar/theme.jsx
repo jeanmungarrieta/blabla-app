@@ -28,6 +28,14 @@
     width:'12rem',
     height:'3rem',
     color:'white',
-    }
+    },
+
+    formControl: {
+      margin: theme.spacing(1),
+      minWidth: 120,
+    },
+    selectEmpty: {
+      marginTop: theme.spacing(2),
+    },
     
 }));
