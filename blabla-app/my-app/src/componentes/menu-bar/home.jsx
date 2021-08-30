@@ -102,6 +102,7 @@ horizontal: 'center'}}>
     <button onClick={handleClick2} className="btn-sesion">{t("header.registro")}</button>
     <button className="btn-ins">{t("header.embarcación")}</button>
     </div> </header> : <UserPage nombre={name}></UserPage> }
+    
       
 
     
