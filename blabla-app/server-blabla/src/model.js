@@ -36,7 +36,7 @@ export const createUser = async (req,res) => {
             secure: true, // true for 465, false for other ports
             auth: {
               user: 'jose.tovarcabrera@gmail.com', // generated ethereal user
-              pass:  // generated ethereal password
+              // pass:  // generated ethereal password
             },
             tls: {
               rejectUnauthorized: false
@@ -76,27 +76,3 @@ export const validateUser = async (user) => {
 
 
 
-///-----model email----------------------------
-export const getMail = (async (req) => {
-
-  let transporter = nodemailer.createTransport({
-    host: "smtp.gmail.com",
-    port: 465,
-    secure: true, // true for 465, false for other ports
-    auth: {
-      user: 'jose.tovarcabrera@gmail.com', // generated ethereal user
-      pass: 'skrlqlnamsgmnupx', // generated ethereal password
-    },
-    tls: {
-      rejectUnauthorized: false
-    }
-  });
-  await transporter.sendMail({
-    from: 'jose.tovarcabrera@gmail.com',
-    to: req.email,
-    subject: 'Message',
-    html: '<p><b>Hola</p>' +
-      '<p> Gracias por registrarte, ya puedes seguir navegando en http://localhost:3000/registrado </p>',
-  })
-  // res.redirect('http://localhost:3000/registrado')
-})
