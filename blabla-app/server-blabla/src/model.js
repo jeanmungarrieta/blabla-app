@@ -35,19 +35,19 @@ export const createUser = async (req,res) => {
             port: 465,
             secure: true, // true for 465, false for other ports
             auth: {
-              user: 'jose.tovarcabrera@gmail.com', // generated ethereal user
-              // pass:  // generated ethereal password
+              user: 'gurumbertotovar@gmail.com', // generated ethereal user
+              pass:'zmyykimefjnxbuke ' // generated ethereal password
             },
             tls: {
               rejectUnauthorized: false
             }
           });
           await transporter.sendMail({
-            from: 'jose.tovarcabrera@gmail.com',
+            from: 'gurumbertotovar@gmail.com',
             to: req.email,
             subject: 'Message',
             html: '<p><b>Hola</p>' +
-              '<p> Gracias por registrarte, ya puedes seguir navegando en http://localhost:3000/registrado </p>',
+              '<p> Gracias por registrarte, ya puedes seguir navegando en http://localhost:3000 </p>',
           })
           
       }
