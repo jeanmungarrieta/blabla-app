@@ -24,7 +24,10 @@ import Sectioncards from './section';
       const [name, setname] = React.useState(""); 
       const [btn, setbtn] = React.useState(true);  
       const [islog, setlog] = React.useState(''); 
-      const [isreg, setreg] = React.useState(false); 
+      const [isreg, setreg] = React.useState(); 
+      const [pReg, setpReg] = React.useState(); 
+      const [isValid, setisValid] = React.useState(); 
+      const [pValid, setpisValid] = React.useState(); 
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [anchorEl2, setAnchorEl2] = React.useState(null);
   const [anchorEl4, setAnchorEl4] = React.useState(null);
@@ -145,8 +148,16 @@ horizontal: 'center',
             'Content-Type': 'application/json',
           },
         })
-        .then(res => res.json())
-        .then(json => console.log(json));
+        .then(function(response) {
+          if (!response.ok) {
+              throw Error(response.status);
+          }
+          return response;
+      }).then(function(response) {
+          console.log("ok");
+      }).catch(function(error) {
+          setpReg('Upps User is already registreded!!')
+      });;
       }}}>
 
         <Grid container spacing={3}>
@@ -224,9 +235,10 @@ horizontal: 'center',
           <Grid item xs={12}>
           <FormControlLabel
                 control={<Checkbox value="allowExtraEmails" color="primary" />}
-                label ={t("logins.politica")}
+                label ={t("logins.politica") }
                 style={{color:"#252E41"}}
               />
+              <p  style={{color:"#252E41",fontSize:"1.5rem"}}>{pReg}</p>
               <div className="btnLog-container">
             <Button disabled={btn} className="btn-sesion"  type="submit" variant="contained">
             {t("logins.registrarse")}
@@ -272,7 +284,7 @@ horizontal: 'left',
         })
         .then(res => res.json())
         .then(data =>{ setlog(data)
-        console.log(islog)}  );
+        }  );
       }}> 
 
         <Grid container spacing={3}>

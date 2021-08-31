@@ -5,7 +5,6 @@
         "embarcación":"Inscribe tu embarcación",
         "hello":"Hola"
     },
-
     "logins":{
         "registro":"Registro",
         "destino":"Destino",
@@ -26,10 +25,16 @@
         "verificado":"El registro se ha completado correctamente",
         "encabezado1":"Te ofrecemos la ventana al" ,
         "encabezado2": "viaje de tus sueños",
-        "encabezado3":"Busca tu próximo destino"
-        
+        "encabezado3":"Busca tu próximo destino",
+        "primertitulocard":"Dónde te gustaria ir",
+        "segundotitulocard":"Destacados",
+        "firstcardinfo1": "Travesía: Denia-La Manga",
+        "firstcardinfo2": "1ª Quincena de julio",
+        "secondcardinfo1": "Travesía: Denia-Tabarca",
+        "secondcardinfo2": "2ª Quincena de julio",
+        "thirdcardinfo1": "Travesía: La Manga-Vera",
+        "thirdcardinfo2": "2ª semana de julio"
     },
-
     "footer":{
         "sobrenosotros": "Sobre nosotros",
         "contacto": "Contacto",

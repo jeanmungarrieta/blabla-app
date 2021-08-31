@@ -5,17 +5,16 @@
         "embarcación":"Register your boat",
         "hello":"Hello"
     },
-
     "logins":{
         "registro":"Registration",
         "destino":"Destiny",
         "fecha":"Date",
         "buscar":"Search",
-        "numero":"numbers",
+        "numero":"Numbers",
         "Nombre":"Name",
         "Apellidos":"Surname",
         "Correo":"Email",
-        "Telefono":"phone",
+        "Telefono":"Phone",
         "Contraseña":"Password",
         "sesion":"Login",
         "politica":"Accept GCU and the Privacy Policy",
@@ -25,10 +24,17 @@
         "rememberCo": "Have you forgotten your password?",
         "verificado":"Registration has been completed successfully",
         "encabezado1":" We offer you the window to",
-        "encabezado2":"the trip of your dreams",
-        "encabezado3":"Find your next destination"
+        "encabezado2":"The trip of your dreams",
+        "encabezado3":"Find your next destination",
+        "primertitulocard":"Where do you want to go",
+        "segundotitulocard":"Highlights",
+        "firstcardinfo1": "Trip across: Denia-La Manga",
+        "firstcardinfo2": "1st Half Of July",
+        "secondcardinfo1": "Trip across: Denia-Tabarca",
+        "secondcardinfo2": "2nd Half Of July",
+        "thirdcardinfo1": "Trip across: La Manga-Vera",
+        "thirdcardinfo2": "2nd week of July"
     },
-
     "footer":{
         "sobrenosotros": "About Us",
         "contacto": "Contact",

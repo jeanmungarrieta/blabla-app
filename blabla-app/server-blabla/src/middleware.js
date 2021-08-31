@@ -9,7 +9,7 @@ export const isValidateReg=async (req,res,next)=>{
      const check = await validateReg(req.body.email)
      console.log(check)
      if(check){
-        res.status(409).send('User is already registreded');
+        res.status(409);
      }else{
         next()     
 }     

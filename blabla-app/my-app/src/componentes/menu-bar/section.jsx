@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react'
 import jeanneauSun1 from '../../assets/jeanneauSun1.png'
 import jeanneauSun2 from '../../assets/jeanneauSun2.png'
@@ -7,58 +6,52 @@ import formentera from '../../assets/menorca.png'
 import islas from '../../assets/islascanarias.png'
 import azimut from '../../assets/azimut.png'
 import './section.css'
-
-
-
+import{useTranslation} from 'react-i18next';
 function Sectioncards() {
-
+    const [t, i18n] = useTranslation("global");
     return (
-
         <section className="cards-container">
-            <h2 className="encabezado">Dónde te gustaria ir</h2>
+            <h2 className="encabezado">{t("logins.primertitulocard")}</h2>
             <div className="firstCards">
-
-                
             <img className="firstcardsImage" src={islas} alt="" />
                <img className="firstcardsImage" src={formentera} alt="" />
                <img className="firstcardsImage" src={menorca} alt="" />
-                
-
-                
-
             </div>
-
-            <h2>Destacados</h2>
+            <h2>{t("logins.segundotitulocard")}</h2>
             <div className="secondCards">
                 <div className="seconddivCards">
                     <img src={jeanneauSun1} alt="" />
-                    <p>
+                    <h3>
                         Jeanneau Sun Odissey 35<br></br>
-                        Travesía: Denia-La Manga<br></br>
-                        1ª Quincena de julio<br></br>
-                    </p>
+                    </h3>
+                    <h4>
+                    <spam className="subtext">{t("logins.firstcardinfo1")}<br></br></spam>
+                    {t("logins.firstcardinfo2")}<br></br>
+                    </h4>
                 </div>
                 <div className="seconddivCards">
                     <img src={jeanneauSun2} alt="" />
-                    <p>
+                    <h3>
                         Jeanneau Sun Odissey 35<br></br>
-                        Travesía: Denia-Tabarca<br></br>
-                        2ª Quincena de julio<br></br>
-                    </p>
+                    </h3>
+                    <h4>
+                    <spam className="subtext">{t("logins.secondcardinfo1")}<br></br></spam>
+                    {t("logins.secondcardinfo2")}<br></br>
+                    </h4>
                 </div>
                 <div className="seconddivCards">
                     <img src={azimut} alt="" />
-                    <p>
+                    <h3>
                         Azimut 68<br></br>
-                        Travesía: La Manga-Vera<br></br>
-                        2ª semana de julio<br></br>
-                    </p>
+                    </h3>
+                    <h4>
+                    <spam className="subtext">{t("logins.thirdcardinfo1")}<br></br></spam>
+                    {t("logins.thirdcardinfo2")}<br></br>
+                    </h4>
                 </div>
             </div>
         </section>
-
     )
         ;
 }
-
 export default Sectioncards
