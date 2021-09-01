@@ -283,8 +283,7 @@ horizontal: 'left',
           },
         })
         .then(res => res.json())
-        .then(data =>{ setlog(data)
-        }  );
+        .then(data =>{ setlog(data)});
       }}> 
 
         <Grid container spacing={3}>
